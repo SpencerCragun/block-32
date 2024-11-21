@@ -8,10 +8,16 @@ GET {{host}}
 GET {{host}}/employees
 
 ### Get specific employee
-GET {{host}}/employees/2
+GET {{host}}/employees/1
 
 ### Get nonexistent employee
 GET {{host}}/employees/123
 
 ### Get random employee
 GET {{host}}/employees/random
+
+POST {{host}}/employees
+Content-Type: application/json
+{
+  "text": "Employee Name"
+}
